@@ -1,4 +1,4 @@
-package ml_dep;
+package deploy;
 
 import java.net.URI;
 import java.net.http.HttpClient;

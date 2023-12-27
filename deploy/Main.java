@@ -1,4 +1,4 @@
-package ml_dep;
+package deploy;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -24,7 +24,7 @@ public class Main {
         MLApiClient mlApiClient = new MLApiClient();
 
         // Read the API key from the file
-        String apiKey = readApiKeyFromFile("/home/mohammed/Desktop/My Projects/ml-java-api/ml_dep/my_key.txt");
+        String apiKey = readApiKeyFromFile("./deploy/my_key.txt");
 
         if (apiKey == null || apiKey.isEmpty()) {
             System.out.println("API key not found. Please check the api-key file.");
